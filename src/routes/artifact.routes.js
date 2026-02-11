@@ -6,11 +6,11 @@ router.post("/", auth, ctrl.createArtifact);
 router.get("/", auth, ctrl.getArtifacts);
 
 // LIKE
-router.post("/:id/like", auth, ctrl.toggleLike);
+router.post("/:id/likes", auth, ctrl.toggleLike);
 router.get("/:id/likes", auth, ctrl.getLikes);
 
 // COMMENT
-router.post("/:id/comment", auth, ctrl.addComment);
+router.post("/:id/comments", auth, ctrl.addComment);
 router.get("/:id/comments", auth, ctrl.getComments);
 
 module.exports = router;

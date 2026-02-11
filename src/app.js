@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 // ⏱ Rate limiter (DEFINE FIRST)
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 min
-  max: 100, // limit each IP
+  max: 2, // limit each IP
   message: "Too many requests, please try again later.",
 });
 

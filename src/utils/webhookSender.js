@@ -3,7 +3,7 @@ const axios = require("axios");
 exports.sendArtifactWebhook = async (artifact) => {
   try {
     await axios.post(
-      "https://webhook.site/d9ba53eb-64b5-481a-834f-d44045f98fae",
+      "https://webhook.site/0c980ed6-8efe-4433-9381-47fc6b35ae73",
       {
         id: artifact._id,
         title: artifact.title,
